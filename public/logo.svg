@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #022b41;
+      }
+
+      .cls-2 {
+        fill: #1b1464;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="logo">
+      <polygon class="cls-2" points="285 57 285 57.22 284.77 57 285 57"/>
+      <polygon class="cls-2" points="284.77 57 284.51 57 284.64 56.87 284.77 57"/>
+      <path class="cls-1" d="M314.35,114.71l.26-.27-45.23-43.83-.23-.22H85.39v159l53-50v-60.5h105.64l-154.6,159.5h-1.04v51h52v.22h99c43.95-5.74,75.03-43.16,73-82.22-1.64-31.69-24.87-60.4-58.06-70.66l60.07-61.98-.04-.04ZM239.39,213.39c17.09,2.49,30.02,16.54,31,33,1.07,17.94-12.3,34.5-31,37.29h-88.73l68.13-70.29c6.6-1,12.6-1,20.6,0Z"/>
+    </g>
+  </g>
+</svg>
