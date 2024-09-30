@@ -1,6 +1,23 @@
 import "./style.css";
 import logo from "./public/logo.svg";
 
+function simulateLoading() {
+  return new Promise((resolve) => {
+    setTimeout(resolve, 2000);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  await simulateLoading();
+  document.getElementById("loader").style.display = "none";
+  const content = document.getElementById("app");
+  content.classList.remove("hidden");
+  document.querySelector("header").classList.add("fade-in-down");
+  document.querySelector(".top").classList.add("fade-in-left");
+  document.querySelector(".bottom").classList.add("fade-in-up");
+  document.querySelector(".centered").classList.add("fade-in-right");
+});
+
 document.querySelector("#app").innerHTML = `
   <header class="header container" id="header">
     <div class="nav_and_logo">
