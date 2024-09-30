@@ -1,3 +1,5 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -126,10 +128,14 @@ body {
     .top {
       display: flex;
       flex-direction: column;
+      align-items: center;
       button {
+        height: auto;
+        max-width: 205px;
+        font-weight: 400;
         margin-bottom: 1rem;
       }
-      h1 {
+      h2 {
         text-align: center;
       }
     }
@@ -153,6 +159,7 @@ body {
     color: #ffffff;
     padding: 1rem;
     border-radius: 1rem;
+    margin-bottom: 2rem;
     button {
       color: #ffffff;
       border-color: #ffffff;
@@ -208,7 +215,46 @@ body {
     }
   }
 }
-
+.footer {
+  background-color: #022b41;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  .footer-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .footer-description {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      p {
+        text-align: center;
+      }
+    }
+    .footer-links {
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        font-size: 18px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+}
 /* show and hide navigation mobile */
 .header {
   display: none;
@@ -238,6 +284,11 @@ body {
         gap: 1rem;
       }
     }
+    button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
   }
   .hero {
     width: 100%;
@@ -263,6 +314,7 @@ body {
       .top {
         max-width: 500px;
         margin: 0;
+        align-items: flex-start;
         button {
           max-width: 35%;
           height: auto;
@@ -270,7 +322,7 @@ body {
           color: #ffffff;
           border: 1.5px solid #ffffff;
         }
-        h1 {
+        h2 {
           font-size: 48px;
           line-height: 60px;
           margin: 0;
@@ -289,7 +341,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: flex-start; /* Cambiado a flex-start para alinear a la izquierda */
+        align-items: flex-start;
         margin: 0;
         border-top: 1px solid #194560;
         p {
@@ -298,6 +350,9 @@ body {
           text-align: left;
         }
         button {
+          display: flex;
+          align-items: center;
+          gap: 8px;
           background-color: #ffffff;
           color: #022b41;
         }
@@ -313,6 +368,7 @@ body {
       background-size: cover;
       background-position: center;
       border-radius: 0;
+      margin: 0;
       .centered {
         height: auto;
         max-height: 500px;
@@ -322,7 +378,7 @@ body {
         flex-direction: column;
         background-color: #ffffff;
         padding: 2rem 1.5rem;
-        button{
+        button {
           color: #022b41;
           border-color: #022b41;
         }
@@ -368,6 +424,31 @@ body {
             font-weight: 600;
             border-color: #022b41;
           }
+        }
+      }
+    }
+  }
+  .footer {
+    height: auto;
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #022b41;
+    padding: 2rem 5rem;
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5rem;
+      .footer-description{
+        max-width: 500px;
+      }
+      .footer-links {
+        min-width: 400px;
+        justify-content: space-between;
+        li {
+          background-color: #194560;
+          padding: 8px;
+          border-radius: 4px;
         }
       }
     }
