@@ -52,7 +52,7 @@ body {
   justify-content: space-between;
   padding: 1rem;
   width: 60%;
-  button{
+  button {
     background-color: #ffffff;
   }
 }
@@ -286,7 +286,7 @@ body {
     .nav_and_logo {
       flex-direction: row;
       align-items: center;
-      hr{
+      hr {
         height: 30px;
         width: 1px;
         background-color: #ccc;
@@ -298,10 +298,17 @@ body {
       }
     }
     button {
-      width: 205px;
+      width: 210px;
       display: flex;
       align-items: center;
       gap: 8px;
+      transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out,
+        border 0.4s ease-in-out;
+    }
+    button:hover {
+      background-color: #0496fb;
+      color: #ffffff;
+      border: 1px solid white;
     }
   }
   .hero {
@@ -369,6 +376,11 @@ body {
           gap: 8px;
           background-color: #ffffff;
           color: #022b41;
+          transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+        }
+        button:hover {
+          background-color: #0496fb;
+          color: #ffffff;
         }
       }
     }
@@ -437,6 +449,13 @@ body {
             font-size: 14px;
             font-weight: 600;
             border-color: #022b41;
+            transition: background-color 0.4s ease-in-out,
+              color 0.4s ease-in-out, border 0.4s ease-in-out;
+          }
+          button:hover {
+            background-color: #0496fb;
+            color: #ffffff;
+            border: 1px solid white;
           }
         }
       }
@@ -463,6 +482,10 @@ body {
           background-color: #194560;
           padding: 8px;
           border-radius: 4px;
+          transition: background-color 0.4s ease-in-out;
+        }
+        li:hover {
+          background-color: #0496fb;
         }
       }
     }
